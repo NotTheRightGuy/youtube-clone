@@ -31,11 +31,11 @@ yarn dev
 
 ## Checkpoints
 
--   [] Home Page
--   [] Video Page
--   [] Search Page
--   [] Responsive Design
+-   [ ] Home Page
+-   [ ] Video Page
+-   [ ] Search Page
+-   [ ] Responsive Design
 
 ## Check out the live demo here
 
-[https://iqm-frontend-task.vercel.app/](https://iqm-frontend-task.vercel.app/)
+[https://youtube-iqm.netlify.app/](https://youtube-iqm.netlify.app/)
