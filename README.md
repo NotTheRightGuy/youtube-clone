@@ -1,5 +1,5 @@
 # IQM Frontend Task - Youtube Clone
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9b5b328f-22e1-49a6-9e9d-a500b25a8f2a/deploy-status)](https://app.netlify.com/sites/youtube-iqm/deploys) <br/>
 This project is a simple clone of the Youtube website. It was built using ReactJS and without using any external libraries. The project was built as a part of the IQM Frontend Task.
 
 ## Features
