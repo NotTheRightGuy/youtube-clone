@@ -1,6 +1,18 @@
 import "../assets/styles/Sidebar.css";
 import SidebarButton from "./common/SidebarButton";
-import { HomeIcon, ShortsIcon, SubscriptionIcon } from "../assets/icons";
+import SubscriptionButton from "./common/SubscriptionButton";
+import {
+    HomeIcon,
+    ShortsIcon,
+    SubscriptionIcon,
+    ArrowIcon,
+    HistoryIcon,
+    PlaylistIcon,
+    YourVideosIcon,
+    CourseIcon,
+    ClockIcon,
+    LikeIcon,
+} from "../assets/icons";
 
 export default function Sidebar() {
     const mainContent = [
@@ -10,29 +22,47 @@ export default function Sidebar() {
     ];
 
     const youContent = [
-        { icon: HomeIcon, text: "History" },
-        { icon: ShortsIcon, text: "Playlists" },
-        { icon: SubscriptionIcon, text: "Your Videos" },
-        { icon: SubscriptionIcon, text: "Your courses" },
-        { icon: SubscriptionIcon, text: "Watch later" },
-        { icon: SubscriptionIcon, text: "Liked videos" },
+        { icon: HistoryIcon, text: "History" },
+        { icon: PlaylistIcon, text: "Playlists" },
+        { icon: YourVideosIcon, text: "Your Videos" },
+        { icon: CourseIcon, text: "Your courses" },
+        { icon: ClockIcon, text: "Watch later" },
+        { icon: LikeIcon, text: "Liked videos" },
     ];
 
     return (
         <aside id="sidebar">
             <div className="main-three">
                 {mainContent.map((b) => (
-                    <SidebarButton Icon={b.icon} text={b.text} />
+                    <SidebarButton
+                        Icon={b.icon}
+                        text={b.text}
+                        disableIconHover
+                    />
                 ))}
             </div>
 
             <div className="you-btns">
-                <p style={{ fontWeight: "500", padding: "12px" }}>You</p>
+                <div className="title">
+                    <p>You</p>
+                    <ArrowIcon id="arrow-icon" />
+                </div>
                 {youContent.map((b) => (
-                    <SidebarButton Icon={b.icon} text={b.text} />
+                    <SidebarButton
+                        Icon={b.icon}
+                        text={b.text}
+                        disableIconHover
+                    />
                 ))}
             </div>
-            <div className="subscription-btns"></div>
+            <div className="subscription-btns">
+                <div className="title not-hover">
+                    <p>Subscriptions</p>
+                </div>
+                {Array.from({ length: 10 }).map(() => (
+                    <SubscriptionButton />
+                ))}
+            </div>
         </aside>
     );
 }

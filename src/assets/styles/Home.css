@@ -8,4 +8,5 @@ main {
 #youtube-container {
     flex-grow: 1;
     display: flex;
+    overflow: auto;
 }
