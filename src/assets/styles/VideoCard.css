@@ -1,0 +1,40 @@
+.thumbnail-container {
+    height: fit-content;
+    width: 397px;
+
+    & .thumbnail-image {
+        width: 397px;
+        border-radius: 16px;
+    }
+
+    & .video-info-container {
+        display: flex;
+        margin-top: 4px;
+        gap: 10px;
+        & .video-creator-image {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+        }
+
+        & .video-text-info {
+            .video-title {
+                font-weight: 500;
+            }
+
+            .video-creator {
+                margin-top: 0.4rem;
+                font-size: 0.9rem;
+                opacity: 0.8;
+            }
+
+            .video-stats {
+                margin-top: 2px;
+                display: flex;
+                font-size: 0.9rem;
+                opacity: 0.8;
+                gap: 4px;
+            }
+        }
+    }
+}
