@@ -1,0 +1,84 @@
+#sidebar {
+    flex-shrink: 0;
+    width: 240px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    & .you-btns {
+        margin-top: 12px;
+        padding-bottom: 12px;
+        border-width: 1px 0px;
+        border-color: #dedede;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &:hover {
+        overflow-y: scroll;
+    }
+}
+
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    gap: 0 14px;
+    border-radius: 8px;
+    padding: 4px;
+
+    & .icon-container {
+        height: 35px;
+        width: 40px;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    & p {
+        font-size: 14px;
+    }
+
+    & .img-container {
+        height: 24px;
+        width: 24px;
+        margin: 4px 8px;
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+
+.you-btns,
+.subscription-btns {
+    & .title {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        margin-top: 8px;
+
+        & p {
+            font-weight: 500;
+            padding: 12px;
+        }
+
+        & #arrow-icon {
+            height: 16px;
+            width: 16px;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+    }
+}
+
+.not-hover:hover {
+    background-color: transparent !important;
+}
