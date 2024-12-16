@@ -1,14 +1,15 @@
 #youtube-content {
     width: 100%;
     overflow-y: hidden;
-    margin-left: 28px;
+    padding-left: 28px;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
 .videos-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 32px 16px;
     flex-wrap: wrap;
     flex-grow: 1;

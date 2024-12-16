@@ -1,7 +1,7 @@
 import "../assets/styles/Home.css";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import YoutubeContent from "../components/YoutubeContent";
+import Navbar from "../components/Navbar/Navbar";
+import Sidebar from "../components/Sidebar/Sidebar";
+import YoutubeContent from "../components/YoutubeContent/YoutubeContent";
 
 export default function Home() {
     return (

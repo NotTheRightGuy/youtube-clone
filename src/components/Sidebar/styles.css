@@ -26,10 +26,12 @@
     gap: 0 14px;
     border-radius: 8px;
     padding: 4px;
+    width: 100%;
 
     & .icon-container {
         height: 35px;
         width: 40px;
+        flex-shrink: 0;
     }
 
     &:hover {
@@ -39,12 +41,18 @@
 
     & p {
         font-size: 14px;
+        flex: 1;
+        min-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     & .img-container {
         height: 24px;
         width: 24px;
         margin: 4px 8px;
+        flex-shrink: 0;
         & img {
             height: 100%;
             width: 100%;

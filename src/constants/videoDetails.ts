@@ -18,7 +18,8 @@ const videoDetails: VideoProps[] = [
         creatorDisplayURL:
             "https://yt3.googleusercontent.com/n3xYuhy3Vc0L_Vi_MYBtiSfUOGLSR6VpJCEgZMzl7GUaxZIbsFSs-AUgFqndTzyu9Nb0s_xS4g=s160-c-k-c0x00ffffff-no-rj",
         videoDurationInSeconds: Number(12 * 60 + 53).toString(),
-        videoTitle: "Mini Project: How to Program a GPU? | CUDA C/C++",
+        videoTitle:
+            "Mini Project: How to Program a GPU? | CUDA C/C++ Mini Project: How to Program a GPU? | CUDA C/C++ Mini Project: How to Program a GPU? | CUDA C/C++ Mini Project: How to Program a GPU? | CUDA C/C++ Mini Project: How to Program a GPU? | CUDA C/C++",
         videoCreator: "0Mean1Sigma",
         videoViews: "16K",
         videoUploaded: "3 days",

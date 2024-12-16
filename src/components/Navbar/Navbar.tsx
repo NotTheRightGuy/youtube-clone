@@ -1,4 +1,4 @@
-import "../assets/styles/Navbar.css";
+import "./styles.css";
 
 import {
     MenuIcon,
@@ -7,7 +7,7 @@ import {
     MicIcon,
     NotificationIcon,
     CreateIcon,
-} from "../assets/icons";
+} from "../../assets/icons";
 
 export default function Navbar() {
     return (

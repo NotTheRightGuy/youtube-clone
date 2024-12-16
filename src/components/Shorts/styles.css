@@ -1,0 +1,42 @@
+.shorts-container {
+    grid-column: 1 / -1;
+
+    & .top-section {
+        display: flex;
+
+        & b {
+            font-size: 1.2rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    & .shorts-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin-top: 2rem;
+        gap: 1rem;
+
+        & .shorts-card-image {
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        & .shorts-card-content {
+            & .shorts-card-title {
+                font-weight: 500;
+                margin-top: 0.5rem;
+                display: -webkit-box;
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            & .shorts-card-info {
+                margin-top: 0.3rem;
+                font-size: 0.9rem;
+                opacity: 0.8;
+            }
+        }
+    }
+}
