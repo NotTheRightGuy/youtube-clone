@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { SidebarContext } from "../../context/SidebarContext";
 import { useMemo } from "react";
 import { YouIcon } from "../../assets/icons";
+import { useEffect } from "react";
 
 export default function Sidebar() {
     const sidebarContext = useContext(SidebarContext);
@@ -15,7 +16,19 @@ export default function Sidebar() {
             "useSidebarContext must be used within a SidebarProvider"
         );
     }
-    const { isSidebarOpen } = sidebarContext;
+    const { isSidebarOpen, toggleSidebar } = sidebarContext;
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 1200 && isSidebarOpen) {
+                toggleSidebar();
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, [isSidebarOpen, toggleSidebar]);
+
     return (
         <aside id="sidebar" className={isSidebarOpen ? "open" : "close"}>
             <div className="main-three">
