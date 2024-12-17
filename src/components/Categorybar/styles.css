@@ -2,9 +2,10 @@
     padding-top: 20px;
     margin-bottom: 28px;
     display: flex;
+    position: relative;
     flex-shrink: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     gap: 0 10px;
     & .categories-icon {
         font-weight: 450;
@@ -24,5 +25,47 @@
     & .categories-icon.active {
         background-color: rgb(0, 0, 0);
         color: white;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: fixed;
+        right: 0;
+        height: 40px;
+        width: 200px;
+        background: linear-gradient(
+            to right,
+            rgb(255, 255, 255, 0),
+            rgb(255, 255, 255, 1),
+            rgb(255, 255, 255, 1)
+        );
+    }
+
+    & .left-arrow {
+        height: 32px;
+        position: fixed;
+        transform: rotate(180deg);
+        z-index: 2;
+        padding: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    & .right-arrow {
+        height: 32px;
+        position: fixed;
+        padding: 8px;
+        border-radius: 50%;
+        right: 2%;
+        z-index: 2;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
     }
 }

@@ -48,6 +48,28 @@ const videoDetails: VideoProps[] = [
     },
     {
         thumbnailURL:
+            "https://i9.ytimg.com/vi/xJQ0qXh1-m0/hq720_custom_3.jpg?sqp=CKzhhLsG-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAqGOvzK4sknzRCJeuIaBtzEzoW1g",
+        creatorDisplayURL:
+            "https://yt3.ggpht.com/ytc/AIdro_k7J8-LWCa5QLDnY3x9kaArgJoSSMory4hgkYSBOFgvEg=s68-c-k-c0x00ffffff-no-rj",
+        videoDurationInSeconds: Number(3 * 3600 + 8 * 60 + 18).toString(),
+        videoTitle: "So I Tried To Learn Shaders...",
+        videoCreator: "ThePrimeTime",
+        videoViews: "59K",
+        videoUploaded: "1 day",
+    },
+    {
+        thumbnailURL:
+            "https://i.ytimg.com/vi/AnEtus9XNws/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCbdDYgvADyperrpZRVBHUMPWA3yQ",
+        creatorDisplayURL:
+            "https://yt3.ggpht.com/hLXKcpwzX6ZJdsaGdhA7gG9ZJhxS_LN-PambAIPv7B-uddiiGPA4zwHodMMmMz-5Kb1nQcT5=s68-c-k-c0x00ffffff-no-rj",
+        videoDurationInSeconds: Number(57 * 60 + 56).toString(),
+        videoTitle: "The Problem with Modern Love",
+        videoCreator: "unsolicited advice",
+        videoViews: "1.4M",
+        videoUploaded: "4 months",
+    },
+    {
+        thumbnailURL:
             "https://i.ytimg.com/vi/_cz0ijnYBJ4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLATStHytFISPv3vCzSgr_IJ4-LlAg",
         creatorDisplayURL:
             "https://yt3.ggpht.com/LI39AqyjtC958vuwXphANpwObWqRuWQ-xnMEeUH0kN4Ca5Oq5oTOiS7bZqZQtjtyZ3kq_7z7dRc=s68-c-k-c0x00ffffff-no-rj",

@@ -3,10 +3,21 @@ import SidebarButton from "../common/SidebarButton";
 import SubscriptionButton from "../common/SubscriptionButton";
 import { mainContent, youContent } from "../../constants";
 import { ArrowIcon } from "../../assets/icons";
+import { useContext } from "react";
+import { SidebarContext } from "../../context/SidebarContext";
+import { useMemo } from "react";
+import { YouIcon } from "../../assets/icons";
 
 export default function Sidebar() {
+    const sidebarContext = useContext(SidebarContext);
+    if (!sidebarContext) {
+        throw new Error(
+            "useSidebarContext must be used within a SidebarProvider"
+        );
+    }
+    const { isSidebarOpen } = sidebarContext;
     return (
-        <aside id="sidebar">
+        <aside id="sidebar" className={isSidebarOpen ? "open" : "close"}>
             <div className="main-three">
                 {mainContent.map((content) => (
                     <SidebarButton
@@ -15,6 +26,9 @@ export default function Sidebar() {
                         disableIconHover
                     />
                 ))}
+                {!isSidebarOpen && (
+                    <SidebarButton Icon={YouIcon} text={"You"} />
+                )}
             </div>
 
             <div className="you-btns">
@@ -34,9 +48,13 @@ export default function Sidebar() {
                 <div className="title not-hover">
                     <p>Subscriptions</p>
                 </div>
-                {Array.from({ length: 10 }).map(() => (
-                    <SubscriptionButton />
-                ))}
+                {useMemo(
+                    () =>
+                        Array.from({ length: 10 }).map((_, index) => (
+                            <SubscriptionButton key={index} />
+                        )),
+                    []
+                )}
             </div>
         </aside>
     );

@@ -2,6 +2,7 @@
     width: 100%;
     overflow-y: hidden;
     padding-left: 28px;
+    padding-right: 28px;
     position: relative;
     display: flex;
     flex-direction: column;

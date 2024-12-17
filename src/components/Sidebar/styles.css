@@ -5,84 +5,127 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    & .you-btns {
-        margin-top: 12px;
-        padding-bottom: 12px;
-        border-width: 1px 0px;
-        border-color: #dedede;
-        border-style: solid;
-        display: flex;
-        flex-direction: column;
-    }
 
-    &:hover {
-        overflow-y: scroll;
-    }
-}
+    &.open {
+        width: 240px;
 
-.sidebar-button {
-    display: flex;
-    align-items: center;
-    gap: 0 14px;
-    border-radius: 8px;
-    padding: 4px;
-    width: 100%;
+        & .you-btns {
+            margin-top: 12px;
+            padding-bottom: 12px;
+            border-width: 1px 0px;
+            border-color: #dedede;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+        }
 
-    & .icon-container {
-        height: 35px;
-        width: 40px;
-        flex-shrink: 0;
-    }
-
-    &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-    }
-
-    & p {
-        font-size: 14px;
-        flex: 1;
-        min-width: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    & .img-container {
-        height: 24px;
-        width: 24px;
-        margin: 4px 8px;
-        flex-shrink: 0;
-        & img {
-            height: 100%;
+        .sidebar-button {
+            display: flex;
+            align-items: center;
+            gap: 0 14px;
+            border-radius: 8px;
+            padding: 4px;
             width: 100%;
-            object-fit: cover;
-            border-radius: 50%;
+
+            & .icon-container {
+                height: 35px;
+                width: 40px;
+                flex-shrink: 0;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+
+            & p {
+                font-size: 14px;
+                flex: 1;
+                min-width: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            & .img-container {
+                height: 24px;
+                width: 24px;
+                margin: 4px 8px;
+                flex-shrink: 0;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
         }
-    }
-}
 
-.you-btns,
-.subscription-btns {
-    & .title {
-        display: flex;
-        align-items: center;
-        border-radius: 8px;
-        margin-top: 8px;
+        .you-btns,
+        .subscription-btns {
+            & .title {
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+                margin-top: 8px;
 
-        & p {
-            font-weight: 500;
-            padding: 12px;
-        }
+                & p {
+                    font-weight: 500;
+                    padding: 12px;
+                }
 
-        & #arrow-icon {
-            height: 16px;
-            width: 16px;
+                & #arrow-icon {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                }
+            }
         }
 
         &:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-            cursor: pointer;
+            overflow-y: scroll;
+        }
+    }
+
+    &.close {
+        width: 72px;
+
+        .sidebar-button {
+            display: flex;
+            flex-direction: column;
+            gap: 0 14px;
+            border-radius: 8px;
+            padding: 4px;
+            width: 100%;
+            margin-bottom: 16px;
+
+            & .icon-container {
+                height: 35px;
+                width: 40px;
+                flex-shrink: 0;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+
+            & p {
+                text-align: center;
+                font-size: 10px;
+            }
+        }
+
+        & .you-btns {
+            display: none;
+        }
+
+        & .subscription-btns {
+            display: none;
         }
     }
 }

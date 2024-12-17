@@ -16,6 +16,7 @@ import LikeIcon from "./LikeIcon";
 import PlaylistIcon from "./PlaylistIcon";
 import YourVideosIcon from "./YourVideosIcon";
 import ThreeDotIcon from "./ThreeDotIcon";
+import YouIcon from "./YouIcon";
 
 export {
     CreateIcon,
@@ -36,4 +37,5 @@ export {
     PlaylistIcon,
     YourVideosIcon,
     ThreeDotIcon,
+    YouIcon,
 };
