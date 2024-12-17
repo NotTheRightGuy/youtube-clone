@@ -6,6 +6,7 @@ import SearchIcon from "./SearchIcon";
 import YouTubeIcon from "./YouTubeIcon";
 import HomeIcon from "./HomeIcon";
 import ShortsIcon from "./ShortsIcon";
+import ShortsIcon2 from "./ShortsIcon2";
 import SubscriptionIcon from "./SubscriptionIcon";
 import ArrowIcon from "./ArrowIcon";
 import ClockIcon from "./ClockIcon";
@@ -15,6 +16,7 @@ import LikeIcon from "./LikeIcon";
 import PlaylistIcon from "./PlaylistIcon";
 import YourVideosIcon from "./YourVideosIcon";
 import ThreeDotIcon from "./ThreeDotIcon";
+import YouIcon from "./YouIcon";
 
 export {
     CreateIcon,
@@ -25,6 +27,7 @@ export {
     YouTubeIcon,
     HomeIcon,
     ShortsIcon,
+    ShortsIcon2,
     SubscriptionIcon,
     ArrowIcon,
     ClockIcon,
@@ -34,4 +37,5 @@ export {
     PlaylistIcon,
     YourVideosIcon,
     ThreeDotIcon,
+    YouIcon,
 };

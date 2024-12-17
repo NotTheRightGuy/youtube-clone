@@ -1,5 +1,4 @@
-import "../assets/styles/Navbar.css";
-
+import "./styles.css";
 import {
     MenuIcon,
     YouTubeIcon,
@@ -7,13 +6,22 @@ import {
     MicIcon,
     NotificationIcon,
     CreateIcon,
-} from "../assets/icons";
+} from "../../assets/icons";
+import { useContext } from "react";
+import { SidebarContext } from "../../context/SidebarContext";
 
 export default function Navbar() {
+    const sidebarContext = useContext(SidebarContext);
+    if (!sidebarContext) {
+        throw new Error(
+            "useSidebarContext must be used within a SidebarProvider"
+        );
+    }
+    const { toggleSidebar } = sidebarContext;
     return (
         <section id="navbar">
             <div>
-                <MenuIcon id="yt-menu-icon" />
+                <MenuIcon id="yt-menu-icon" onClick={toggleSidebar} />
                 <YouTubeIcon id="yt-logo-icon" />
             </div>
             <div>

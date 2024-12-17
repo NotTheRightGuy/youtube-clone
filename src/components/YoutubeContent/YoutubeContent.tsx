@@ -1,7 +1,8 @@
-import "../assets/styles/YoutubeContent.css";
-import VideoCard from "./common/VideoCard";
-import videoDetails from "../utils/videoDetails";
-import Categorybar from "./Categorybar";
+import "./styles.css";
+import VideoCard from "../common/VideoCard";
+import videoDetails from "../../constants/videoDetails";
+import Categorybar from "../Categorybar/Categorybar";
+import Shorts from "../Shorts/Shorts";
 
 export default function YoutubeContent() {
     return (
@@ -11,6 +12,7 @@ export default function YoutubeContent() {
                 {videoDetails.map((video) => (
                     <VideoCard videoInfo={video} />
                 ))}
+                <Shorts />
                 {videoDetails.map((video) => (
                     <VideoCard videoInfo={video} />
                 ))}

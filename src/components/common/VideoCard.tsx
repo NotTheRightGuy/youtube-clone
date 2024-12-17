@@ -1,7 +1,7 @@
 import "../../assets/styles/VideoCard.css";
 import { ThreeDotIcon } from "../../assets/icons";
 import { VideoProps } from "../../types/VideoProps";
-import convertSecondsToDuration from "../../utils/convertSecondsToDuration";
+import convertSecondsToDuration from "../../utils/formatters/convertSecondsToDuration";
 
 export default function VideoCard({ videoInfo }: { videoInfo: VideoProps }) {
     return (

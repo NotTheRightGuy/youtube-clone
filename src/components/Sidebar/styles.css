@@ -1,0 +1,211 @@
+#sidebar {
+    flex-shrink: 0;
+    width: 240px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &.open {
+        width: 240px;
+
+        & .you-btns {
+            margin-top: 12px;
+            padding-bottom: 12px;
+            border-width: 1px 0px;
+            border-color: #dedede;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-button {
+            display: flex;
+            align-items: center;
+            gap: 0 14px;
+            border-radius: 8px;
+            padding: 4px;
+            width: 100%;
+
+            & .icon-container {
+                height: 35px;
+                width: 40px;
+                flex-shrink: 0;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+
+            & p {
+                font-size: 14px;
+                flex: 1;
+                min-width: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            & .img-container {
+                height: 24px;
+                width: 24px;
+                margin: 4px 8px;
+                flex-shrink: 0;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .you-btns,
+        .subscription-btns {
+            & .title {
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+                margin-top: 8px;
+
+                & p {
+                    font-weight: 500;
+                    padding: 12px;
+                }
+
+                & #arrow-icon {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &:hover {
+            overflow-y: scroll;
+        }
+    }
+
+    &.close {
+        width: 72px;
+
+        .sidebar-button {
+            display: flex;
+            flex-direction: column;
+            gap: 0 14px;
+            border-radius: 8px;
+            padding: 4px;
+            width: 100%;
+            margin-bottom: 16px;
+
+            & .icon-container {
+                height: 35px;
+                width: 40px;
+                flex-shrink: 0;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+
+            & p {
+                text-align: center;
+                font-size: 10px;
+            }
+        }
+
+        & .you-btns {
+            display: none;
+        }
+
+        & .subscription-btns {
+            display: none;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+}
+
+.not-hover:hover {
+    background-color: transparent !important;
+}
+
+@media screen and (max-width: 1199px) {
+    #sidebar.open {
+        width: 200px;
+
+        .sidebar-button {
+            padding: 8px 4px;
+
+            & .icon-container {
+                width: 32px;
+            }
+
+            & p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #sidebar {
+        position: fixed;
+        top: 56px;
+        left: -240px;
+        height: calc(100vh - 56px);
+        background: white;
+        z-index: 1000;
+        transition: left 0.3s ease;
+
+        &.open {
+            left: 0;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+
+            .sidebar-button {
+                padding: 12px 8px;
+
+                & .icon-container {
+                    width: 36px;
+                }
+
+                & p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &.close {
+            width: 0;
+            padding: 0;
+            visibility: hidden;
+        }
+    }
+
+    .not-hover {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #sidebar.open {
+        width: 100%;
+    }
+}

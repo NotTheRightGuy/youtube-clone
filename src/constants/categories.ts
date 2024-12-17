@@ -11,6 +11,10 @@ const categories = [
     "Body Building",
     "Computer Programming",
     "Cooking",
+    "Minecraft",
+    "Minecraft Modding",
+    "GPU Programming",
+    "CPU Programming",
 ];
 
 export default categories;
