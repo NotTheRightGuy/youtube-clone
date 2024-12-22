@@ -53,7 +53,7 @@
         padding: 0 16px;
 
         &:hover {
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: var(--hover-color);
         }
     }
 }
@@ -65,7 +65,7 @@
     padding: 10px;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: var(--hover-color);
         border-radius: 50%;
     }
 }
@@ -82,7 +82,7 @@
     border-radius: 50%;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: var(--hover-color);
     }
 }
 
@@ -114,7 +114,82 @@
     border-radius: 50%;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: var(--hover-color);
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #navbar > div:nth-child(2) {
+        padding-top: 4px;
+        max-width: 500px;
+    }
+
+    #yt-search {
+        margin-right: 8px;
+    }
+
+    .icon-container {
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #navbar {
+        padding: 0 8px;
+
+        & > div:nth-child(3) {
+            gap: 8px;
+        }
+    }
+
+    #yt-logo-icon {
+        padding: 12px 8px;
+        width: 90px;
+    }
+
+    #yt-menu-icon {
+        height: 40px;
+        width: 40px;
+        padding: 8px;
+    }
+
+    .icon-container {
+        padding: 4px;
+    }
+
+    #yt-search-icon,
+    #yt-mic-icon,
+    #yt-create-icon,
+    #yt-notification-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    #yt-user-icon {
+        height: 32px;
+        width: 32px;
+    }
+
+    .search-active {
+        & > div:first-child,
+        & > div:last-child {
+            display: none;
+        }
+
+        & > div:nth-child(2) {
+            display: flex;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #navbar {
+        padding: 0 4px;
+    }
+
+    .icon-container {
+        padding: 3px;
     }
 }

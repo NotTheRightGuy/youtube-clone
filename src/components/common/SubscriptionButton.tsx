@@ -1,4 +1,4 @@
-import generateRandomChannel from "../../utils/generateRandomChannel";
+import generateRandomChannel from "../../utils/generators/generateRandomChannel";
 
 export default function SubscriptionButton({ ...props }) {
     return (

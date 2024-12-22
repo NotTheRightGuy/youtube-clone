@@ -1,14 +1,16 @@
 import React from "react";
 
+interface SidebarButtonProps {
+    Icon: React.FC;
+    text: String;
+    disableIconHover?: Boolean;
+}
+
 export default function SidebarButton({
     Icon,
     text,
     disableIconHover,
-}: {
-    Icon: React.FC;
-    text: String;
-    disableIconHover?: Boolean;
-}) {
+}: SidebarButtonProps) {
     return (
         <div className="sidebar-button">
             <div

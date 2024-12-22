@@ -13,6 +13,4 @@ export default function convertSecondsToDuration(seconds: string) {
     }
 
     return `${hoursString}:${minutesString}:${secondsString}`;
-
-    return seconds;
 }
