@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { SidebarProvider } from "./context/SidebarContext";
 import Home from "./page/Home";
 import WatchPage from "./page/WatchPage";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 export default function App() {
     return (
         <main>
