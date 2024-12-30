@@ -1,0 +1,116 @@
+.watch-video-title {
+    padding-top: 12px;
+    font-size: 20px;
+}
+
+.watch-top-row {
+    display: flex;
+
+    & .watch-author-details {
+        display: flex;
+    }
+}
+
+.video-info-container {
+    padding: 12px 0;
+    color: #0f0f0f;
+}
+
+.video-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+.video-info-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.channel-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.channel-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.channel-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.channel-subscribers {
+    font-size: 12px;
+    color: #606060;
+    margin: 0;
+}
+
+.subscribe-button {
+    background-color: #0f0f0f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.video-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #f2f2f2;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #0f0f0f;
+}
+
+.action-button:hover {
+    background: #e5e5e5;
+}
+
+.like-dislike-container {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 20px;
+}
+
+.like-dislike-container .action-button {
+    background: transparent;
+}
+
+.separator {
+    width: 1px;
+    height: 24px;
+    background: #ccc;
+}

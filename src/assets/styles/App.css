@@ -1,0 +1,32 @@
+main {
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+#youtube-container {
+    flex-grow: 1;
+    display: flex;
+    overflow: auto;
+}
+
+#watch-container {
+    padding: 24px 16px 0 16px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: minmax(640px, 1fr) 402px;
+    gap: 24px;
+    overflow: auto;
+
+    & #column-video {
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #watch-container {
+        grid-template-columns: 1fr;
+    }
+}

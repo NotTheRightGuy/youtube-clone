@@ -1,0 +1,6 @@
+#video-stream-container {
+    background-color: gray;
+    border-radius: 16px;
+    height: 580px;
+    aspect-ratio: 16/9;
+}

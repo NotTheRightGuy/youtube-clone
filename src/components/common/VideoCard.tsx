@@ -1,11 +1,18 @@
 import "../../assets/styles/VideoCard.css";
 import { ThreeDotIcon } from "../../assets/icons";
 import { VideoProps } from "../../types/VideoProps";
+import { useNavigate } from "react-router";
 import convertSecondsToDuration from "../../utils/formatters/convertSecondsToDuration";
 
 export default function VideoCard({ videoInfo }: { videoInfo: VideoProps }) {
+    const navigate = useNavigate();
     return (
-        <div className="thumbnail-container">
+        <div
+            className="thumbnail-container"
+            onClick={() => {
+                navigate(`/watch?v=${videoInfo.id}`);
+            }}
+        >
             <div className="thumbnail-image-container">
                 <img
                     src={videoInfo.thumbnailURL}
