@@ -2,6 +2,7 @@ import { VideoProps } from "../types/VideoProps";
 
 const videoDetails: VideoProps[] = [
     {
+        id: "eDkV9yMBF0",
         thumbnailURL:
             "https://i.ytimg.com/vi/-eDkV9yMBF0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADRpsZArA0ADgRARUHCRxzy2n5oA",
         creatorDisplayURL:
@@ -13,6 +14,7 @@ const videoDetails: VideoProps[] = [
         videoUploaded: "2 hours",
     },
     {
+        id: "GetaI7KhbzM",
         thumbnailURL:
             "https://i.ytimg.com/vi/GetaI7KhbzM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBiRp9xaUqpwu1Yx-ugnYHEKdlfOw",
         creatorDisplayURL:
@@ -25,6 +27,7 @@ const videoDetails: VideoProps[] = [
         videoUploaded: "3 days",
     },
     {
+        id: "VkQsafoUPBk",
         thumbnailURL:
             "https://i.ytimg.com/vi/VkQsafoUPBk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACBows6wkXtI_W6eOfE29oeYhpoA",
         creatorDisplayURL:
@@ -36,6 +39,7 @@ const videoDetails: VideoProps[] = [
         videoUploaded: "6 days",
     },
     {
+        id: "WMlXBkjyoyI",
         thumbnailURL:
             "https://i.ytimg.com/vi/WMlXBkjyoyI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDKIfok_-CJaFcNkTKOMWX_Twq7Pw",
         creatorDisplayURL:
@@ -47,17 +51,19 @@ const videoDetails: VideoProps[] = [
         videoUploaded: "8 months",
     },
     {
+        id: "jc_6ZkkOUpQ",
         thumbnailURL:
-            "https://i9.ytimg.com/vi/xJQ0qXh1-m0/hq720_custom_3.jpg?sqp=CKzhhLsG-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAqGOvzK4sknzRCJeuIaBtzEzoW1g",
+            "https://i.ytimg.com/vi/jc_6ZkkOUpQ/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGEwgRShlMA8=&rs=AOn4CLAfmmnwazAbIq40u75x3qXVEPTpQQ",
         creatorDisplayURL:
             "https://yt3.ggpht.com/ytc/AIdro_k7J8-LWCa5QLDnY3x9kaArgJoSSMory4hgkYSBOFgvEg=s68-c-k-c0x00ffffff-no-rj",
-        videoDurationInSeconds: Number(3 * 3600 + 8 * 60 + 18).toString(),
-        videoTitle: "So I Tried To Learn Shaders...",
+        videoDurationInSeconds: Number(4 * 60 + 59).toString(),
+        videoTitle: "how my programming changed after 20 years ",
         videoCreator: "ThePrimeTime",
-        videoViews: "59K",
-        videoUploaded: "1 day",
+        videoViews: "111K",
+        videoUploaded: "2 months",
     },
     {
+        id: "AnEtus9XNws",
         thumbnailURL:
             "https://i.ytimg.com/vi/AnEtus9XNws/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCbdDYgvADyperrpZRVBHUMPWA3yQ",
         creatorDisplayURL:
@@ -69,6 +75,7 @@ const videoDetails: VideoProps[] = [
         videoUploaded: "4 months",
     },
     {
+        id: "_cz0ijnYBJ4",
         thumbnailURL:
             "https://i.ytimg.com/vi/_cz0ijnYBJ4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLATStHytFISPv3vCzSgr_IJ4-LlAg",
         creatorDisplayURL:
@@ -80,6 +87,7 @@ const videoDetails: VideoProps[] = [
         videoUploaded: "1 month",
     },
     {
+        id: "dwY7w0k3j2Y",
         thumbnailURL:
             "https://i.ytimg.com/vi/dwY7w0k3j2Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5CRkU5ViYGO74W8H2Zy0t-WlpJg",
         creatorDisplayURL:

@@ -1,4 +1,5 @@
 export type VideoProps = {
+    id: string;
     thumbnailURL: string;
     creatorDisplayURL: string;
     videoDurationInSeconds: string;
