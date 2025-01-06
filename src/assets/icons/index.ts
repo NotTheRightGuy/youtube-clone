@@ -17,6 +17,11 @@ import PlaylistIcon from "./PlaylistIcon";
 import YourVideosIcon from "./YourVideosIcon";
 import ThreeDotIcon from "./ThreeDotIcon";
 import YouIcon from "./YouIcon";
+import DownloadIcon from "./DownloadIcon";
+import DislikeIcon from "./DislikeIcon";
+import ShareIcon from "./ShareIcon";
+import ThreeDotHorizontal from "./ThreeDotHorizontal";
+import SortIcon from "./SortIcon";
 
 export {
     CreateIcon,
@@ -32,10 +37,15 @@ export {
     ArrowIcon,
     ClockIcon,
     CourseIcon,
+    ShareIcon,
+    ThreeDotHorizontal,
     HistoryIcon,
     LikeIcon,
+    DislikeIcon,
     PlaylistIcon,
+    DownloadIcon,
     YourVideosIcon,
     ThreeDotIcon,
+    SortIcon,
     YouIcon,
 };

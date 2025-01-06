@@ -1,0 +1,71 @@
+.video-description {
+    background: #f2f2f2;
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.video-description.expanded {
+    cursor: default;
+}
+
+.video-stats {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.description-content {
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.hashtags {
+    margin-bottom: 8px;
+}
+
+.hashtags a {
+    color: #065fd4;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+.hashtags a:hover {
+    text-decoration: underline;
+}
+
+.description-text {
+    margin: 0;
+    overflow: hidden;
+    max-height: 85px;
+}
+
+.expanded .description-text {
+    max-height: none;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.show-more-btn:hover {
+    color: #0f0f0f;
+}
+
+.extra-content {
+    margin-top: 12px;
+}
+
+.extra-content p {
+    margin: 8px 0;
+}

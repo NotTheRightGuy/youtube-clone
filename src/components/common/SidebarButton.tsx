@@ -2,8 +2,8 @@ import React from "react";
 
 interface SidebarButtonProps {
     Icon: React.FC;
-    text: String;
-    disableIconHover?: Boolean;
+    text: string;
+    disableIconHover?: boolean;
 }
 
 export default function SidebarButton({

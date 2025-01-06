@@ -9,7 +9,7 @@ import { useMemo } from "react";
 import { YouIcon } from "../../assets/icons";
 import { useEffect } from "react";
 
-export default function Sidebar() {
+export default function Sidebar({ watchPage }: { watchPage?: Boolean }) {
     const sidebarContext = useContext(SidebarContext);
     if (!sidebarContext) {
         throw new Error(
@@ -30,7 +30,12 @@ export default function Sidebar() {
     }, [isSidebarOpen, toggleSidebar]);
 
     return (
-        <aside id="sidebar" className={isSidebarOpen ? "open" : "close"}>
+        <aside
+            id="sidebar"
+            className={`${isSidebarOpen ? "open" : "close"} ${
+                watchPage ? "watch-page" : ""
+            }`}
+        >
             <div className="main-three">
                 {mainContent.map((content) => (
                     <SidebarButton

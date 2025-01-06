@@ -22,7 +22,12 @@ export default function Navbar() {
         <section id="navbar">
             <div>
                 <MenuIcon id="yt-menu-icon" onClick={toggleSidebar} />
-                <YouTubeIcon id="yt-logo-icon" />
+                <YouTubeIcon
+                    id="yt-logo-icon"
+                    onClick={() => {
+                        window.location.href = "/";
+                    }}
+                />
             </div>
             <div>
                 <form id="yt-search">
