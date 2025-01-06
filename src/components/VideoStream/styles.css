@@ -1,6 +1,30 @@
 #video-stream-container {
-    background-color: gray;
+    position: relative;
+    background-color: #1e1e1e;
     border-radius: 16px;
-    height: 580px;
+    width: 100%;
     aspect-ratio: 16/9;
+}
+
+#video-controls {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 4px 16px;
+    box-sizing: border-box;
+}
+
+#video-controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.timestamp {
+    color: white;
+    margin: 0 16px;
 }

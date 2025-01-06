@@ -1,11 +1,13 @@
 import "./styles.css";
-import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
-import { PiShareFat } from "react-icons/pi";
-import { TfiDownload } from "react-icons/tfi";
-import { HiDotsHorizontal } from "react-icons/hi";
-import { LiaHandshake } from "react-icons/lia";
 import VideoDescription from "../VideoDescription/VideoDescription";
 import Comments from "../Comments/Comments";
+import {
+    LikeIcon,
+    DownloadIcon,
+    DislikeIcon,
+    ShareIcon,
+    ThreeDotHorizontal,
+} from "../../assets/icons";
 
 export default function VideoInfo() {
     return (
@@ -30,32 +32,27 @@ export default function VideoInfo() {
                 <div className="video-actions">
                     <div className="like-dislike-container">
                         <button className="action-button">
-                            <AiOutlineLike size={20} />
+                            <LikeIcon height={22} width={22} />
                             <span>23K</span>
                         </button>
                         <div className="separator"></div>
                         <button className="action-button">
-                            <AiOutlineDislike size={20} />
+                            <DislikeIcon height={22} width={22} />
                         </button>
                     </div>
 
                     <button className="action-button">
-                        <PiShareFat size={20} />
+                        <ShareIcon height={24} width={24} />
                         <span>Share</span>
                     </button>
 
                     <button className="action-button">
-                        <TfiDownload size={20} />
+                        <DownloadIcon height={22} width={22} />
                         <span>Download</span>
                     </button>
 
                     <button className="action-button">
-                        <LiaHandshake size={20} />
-                        <span>Thanks</span>
-                    </button>
-
-                    <button className="action-button">
-                        <HiDotsHorizontal size={20} />
+                        <ThreeDotHorizontal height={22} width={22} />
                     </button>
                 </div>
             </div>

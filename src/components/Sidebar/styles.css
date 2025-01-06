@@ -143,6 +143,10 @@
     }
 }
 
+#sidebar.close.watch-page {
+    display: none;
+}
+
 .not-hover:hover {
     background-color: transparent !important;
 }
@@ -208,4 +212,13 @@
     #sidebar.open {
         width: 100%;
     }
+}
+
+.watch-page {
+    height: 100%;
+    background-color: white;
+
+    position: fixed;
+    left: 0;
+    z-index: 10;
 }

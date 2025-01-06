@@ -125,13 +125,13 @@
 .comment-text {
     font-size: 14px;
     margin: 0;
-    margin-bottom: 8px;
 }
 
 .comment-actions-row {
     display: flex;
     gap: 8px;
     align-items: center;
+    margin-bottom: 16px;
 }
 
 .action-btn {

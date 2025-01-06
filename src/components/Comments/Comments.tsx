@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { DislikeIcon, LikeIcon, SortIcon } from "../../assets/icons";
 import "./styles.css";
 
 export default function Comments() {
@@ -11,9 +12,7 @@ export default function Comments() {
                 <h2>{commentsCount} Comments</h2>
                 <div className="comments-sort">
                     <button className="sort-button">
-                        <svg height="24" viewBox="0 0 24 24" width="24">
-                            <path d="M21,6H3V5h18V6z M15,11H3v1h12V11z M9,17H3v1h6V17z"></path>
-                        </svg>
+                        <SortIcon height={24} width={24} />
                         Sort by
                     </button>
                 </div>
@@ -67,15 +66,11 @@ export default function Comments() {
                         </p>
                         <div className="comment-actions-row">
                             <button className="action-btn">
-                                <svg height="16" viewBox="0 0 16 16" width="16">
-                                    <path d="M12.42,14A1.54,1.54,0,0,0,14,12.87l1-4.24C15.12,7.76,15,7,14,7H10l1.48-3.54A1.17,1.17,0,0,0,10.24,2a1.49,1.49,0,0,0-1.08.46L5,7H1v7ZM9.89,3.14A.48.48,0,0,1,10.24,3a.29.29,0,0,1,.23.09S9,6.61,9,6.61L8.46,8H14c0,.08-1,4.65-1,4.65a.58.58,0,0,1-.58.35H2V7.08H6L9.89,3.14Z"></path>
-                                </svg>
+                                <LikeIcon height={20} width={20} />
                                 <span>123</span>
                             </button>
                             <button className="action-btn">
-                                <svg height="16" viewBox="0 0 16 16" width="16">
-                                    <path d="M3.54,2A1.55,1.55,0,0,0,2,3.13L1,7.37C.83,8.24,1,9,2,9H6L4.52,12.54A1.17,1.17,0,0,0,5.71,14a1.49,1.49,0,0,0,1.09-.46L11,9h4V2ZM6.07,12.86A.51.51,0,0,1,5.71,13a.28.28,0,0,1-.24-.09S7,9.06,7,9.06L7.54,8H2S3,3.35,3,3.35A.58.58,0,0,1,3.54,3H14V8.92H10L6.07,12.86Z"></path>
-                                </svg>
+                                <DislikeIcon height={20} width={20} />
                             </button>
                             <button className="action-btn">Reply</button>
                         </div>
